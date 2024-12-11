@@ -7,16 +7,17 @@ function TasksCompleted() {
         return element.state.includes("completed".toLowerCase())
     }).map((element) => {
         return <li key={element.id}>
-            <h3>{element.title}</h3>
+            <h3>{element.title}<span className='state-description'>{element.state}</span></h3>
             <p>Priority: {element.priority}</p>
             <p>Est. time {element.estimatedTime}</p>
         </li>
     });
 
-    tasksCompleted = <>
-        <h2>Completed Tasks ({tasksCompleted.length})</h2>
-        <ul>{tasksCompleted}</ul>
-    </>
+    tasksCompleted =
+        <>
+            <h2>Completed Tasks ({tasksCompleted.length})</h2>
+            <ul>{tasksCompleted}</ul>
+        </>
     return tasksCompleted;
 }
 
