@@ -23,13 +23,29 @@ h2 {
   font-weight: 900;
 }
 
-
-.state-description {
+/* Classi per gli stati dinamici */
+.state-completed {
+  margin-left: 5px;
+  padding: 8px 10px;
+  background-color: #1ed245;
+  color: white;
+}
+.state-inprogress {
   margin-left: 5px;
   padding: 8px 10px;
   background-color: #D2691E;
   color: white;
 }
+
+.state-backlog {
+  margin-left: 5px;
+  padding: 8px 10px;
+  background-color: red;
+  color: white;
+}
+/* Fine classi per gli stati dinamici */
+
+
 
 /* body {
   margin: 0;

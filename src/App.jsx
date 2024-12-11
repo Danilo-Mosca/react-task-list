@@ -6,6 +6,9 @@ import TasksCompleted from "./components/TasksCompleted";
 import TasksNotCompleted from "./components/TasksNotCompleted";
 // import "./App.css";
 
+/* Importo lo useState direttamente da react */
+import { useState } from "react";
+
 function App() {
   //parte logica
 
