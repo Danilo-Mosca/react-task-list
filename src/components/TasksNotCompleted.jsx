@@ -25,13 +25,13 @@ function TasksNotCompleted() {
         </li>
     });
 
-    const mergedTasks = tasksBacklog.concat(tasksInProgress);
+    let mergedTasks = tasksBacklog.concat(tasksInProgress);
     
-    const template = <>
+    mergedTasks = <>
         <h2>Current Tasks ({mergedTasks.length})</h2>
         <ul>{mergedTasks}</ul>
     </>
-    return template;
+    return mergedTasks;
 }
 
 export default TasksNotCompleted;

@@ -13,11 +13,11 @@ function TasksCompleted() {
         </li>
     });
 
-    const template = <>
+    tasksCompleted = <>
         <h2>Completed Tasks ({tasksCompleted.length})</h2>
         <ul>{tasksCompleted}</ul>
     </>
-    return template;
+    return tasksCompleted;
 }
 
 export default TasksCompleted;
