@@ -17,9 +17,11 @@ function App() {
     //Prima richiamo il componente <React.Fragment> o nella forma abbreviata <> per permettere di tornare più elementi:
     <>
       <HeaderComponent />
-
-      <TasksNotCompleted />
-      <TasksCompleted />
+      <section>
+        <TasksNotCompleted />
+        <hr />
+        <TasksCompleted />
+      </section>
     </>
   );
 }
