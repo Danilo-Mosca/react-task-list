@@ -4,7 +4,7 @@ import TasksCompleted from "./components/TasksCompleted";
 import TasksNotCompleted from "./components/TasksNotCompleted";
 
 function App() {
-  //parte logica
+  //parte logica di funzionamento
 
   //parte html da ritornare
   return (
