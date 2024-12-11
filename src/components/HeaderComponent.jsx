@@ -1,3 +1,4 @@
+/* Funzione che restituisce il titolo dell'header */
 function HeaderComponent() {
     const title = "Task Manager";
     return (
