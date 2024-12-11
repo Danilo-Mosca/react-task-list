@@ -12,7 +12,12 @@ function TasksCompleted() {
             <p>Est. time {element.estimatedTime}</p>
         </li>
     });
-    return tasksCompleted;
+
+    const template = <>
+        <h2>Completed Tasks ({tasksCompleted.length})</h2>
+        <ul>{tasksCompleted}</ul>
+    </>
+    return template;
 }
 
 export default TasksCompleted;

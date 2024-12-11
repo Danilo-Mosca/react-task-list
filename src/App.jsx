@@ -14,11 +14,9 @@ function App() {
     //Prima richiamo il componente <React.Fragment> o nella forma abbreviata <> per permettere di tornare più elementi:
     <>
       <HeaderComponent />
-      <h2>Current Tasks ()</h2>
-      <ul><TasksNotCompleted /></ul>
 
-      <h2>Completed Tasks ()</h2>
-      <ul><TasksCompleted /></ul>
+      <TasksNotCompleted />
+      <TasksCompleted />
     </>
   );
 }

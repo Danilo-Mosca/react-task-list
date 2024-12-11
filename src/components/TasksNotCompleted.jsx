@@ -26,9 +26,12 @@ function TasksNotCompleted() {
     });
 
     const mergedTasks = tasksBacklog.concat(tasksInProgress);
-    console.log("Lunghezza array MergedTasks: ", mergedTasks.length);
     
-    return mergedTasks;
+    const template = <>
+        <h2>Current Tasks ({mergedTasks.length})</h2>
+        <ul>{mergedTasks}</ul>
+    </>
+    return template;
 }
 
 export default TasksNotCompleted;
