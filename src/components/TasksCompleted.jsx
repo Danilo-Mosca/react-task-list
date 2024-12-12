@@ -6,7 +6,7 @@ function TasksCompleted() {
 
     // Filtro prima le tasks che contengono nella chiave status la stringa "completed"
     tasksCompleted = tasks.filter((element) => {
-        return element.state.includes("completed".toLowerCase())
+        return element.state === "completed".toLowerCase();
     }).map((element) => {
         // Ritorno l'array filtrato con l'aggiunta di tag html
         return <li key={element.id}>
